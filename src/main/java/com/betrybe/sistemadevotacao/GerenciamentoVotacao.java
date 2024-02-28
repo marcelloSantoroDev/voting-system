@@ -24,7 +24,7 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
     }
 
     if (!pessoaEstaCadastrada) {
-      PessoaCandidata novoCandidato = new PessoaCandidata(numero, nome);
+      PessoaCandidata novoCandidato = new PessoaCandidata(nome, numero);
       this.pessoasCandidatas.add(novoCandidato);
     } else {
       System.out.println("Número da pessoa candidata já utilizado!");
