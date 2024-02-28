@@ -43,7 +43,7 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
     }
 
     if (!pessoaEstaCadastrada) {
-      PessoaEleitora novoEleitor = new PessoaEleitora(cpf, nome);
+      PessoaEleitora novoEleitor = new PessoaEleitora(nome, cpf);
       this.pessoasEleitoras.add(novoEleitor);
     } else {
       System.out.println("Pessoa eleitora já cadastrada!");

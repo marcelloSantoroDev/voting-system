@@ -12,9 +12,9 @@ public class PessoaEleitora extends Pessoa {
    * @param cpf  the cpf
    * @param nome the nome
    */
-  public PessoaEleitora(String cpf, String nome) {
-    this.cpf = cpf;
+  public PessoaEleitora(String nome, String cpf) {
     this.nome = nome;
+    this.cpf = cpf;
   }
 
   /**
