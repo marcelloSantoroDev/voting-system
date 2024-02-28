@@ -81,13 +81,13 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
     } else {
       int totalDeVotos = cpfsComputados.size();
       for (PessoaCandidata pessoa : pessoasCandidatas) {
-        double porcentagemDeVotos = (double) (pessoa.getVotos() * 100) / totalDeVotos;
+        int porcentagemDeVotos = pessoa.getVotos() * 100 / totalDeVotos;
         System.out.println("Nome: "
             + pessoa.getNome()
             + " - " + pessoa.getVotos()
             + " votos "
             + "( "
-            + Math.round(porcentagemDeVotos)
+            + porcentagemDeVotos
             + " )");
       }
       System.out.println("Total de votos: " + totalDeVotos);

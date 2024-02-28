@@ -98,7 +98,9 @@ public class Principal {
 
     }
 
+    gerenciamentoVotacao.mostrarResultado();
 
+    scanner.close();
   }
 
 }
